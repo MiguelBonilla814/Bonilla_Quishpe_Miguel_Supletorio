@@ -1,6 +1,7 @@
 package com.example.bonilla_quishpe_miguel_supletorio;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -18,4 +19,6 @@ public class ReportesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reportes);
     }
+
+
 }

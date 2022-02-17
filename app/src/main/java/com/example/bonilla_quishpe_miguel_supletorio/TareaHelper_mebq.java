@@ -27,5 +27,5 @@ public class TareaHelper_mebq extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS Usuarios");
 
     }
-    }
+
 }

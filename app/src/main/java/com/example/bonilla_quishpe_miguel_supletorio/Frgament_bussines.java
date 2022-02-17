@@ -3,10 +3,16 @@ package com.example.bonilla_quishpe_miguel_supletorio;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,21 +27,15 @@ public class Frgament_bussines extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+
 
     public Frgament_bussines() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Frgament_bussines.
-     */
+    private List<Tarea> listaTareas = new ArrayList<Tarea>();
+    private RecyclerView mRecyclerView;
+
     // TODO: Rename and change types and number of parameters
     public static Frgament_bussines newInstance(String param1, String param2) {
         Frgament_bussines fragment = new Frgament_bussines();
@@ -49,10 +49,6 @@ public class Frgament_bussines extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -61,4 +57,6 @@ public class Frgament_bussines extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_frgament_bussines, container, false);
     }
+
+
 }
