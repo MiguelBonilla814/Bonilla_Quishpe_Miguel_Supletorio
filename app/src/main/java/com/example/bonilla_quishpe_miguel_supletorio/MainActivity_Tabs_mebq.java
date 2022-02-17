@@ -36,9 +36,5 @@ public class MainActivity_Tabs_mebq extends AppCompatActivity {
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
 
-        listView_arreglo = findViewById(R.id.list_view_reportes);
-        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.detalle_reportes, nombres);
-        lv1.setAdapter(adapter);
-
     }
 }
