@@ -23,9 +23,9 @@ public class MainActivity_Tabs_mebq extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainTabsMebqBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = binding.viewPager;
