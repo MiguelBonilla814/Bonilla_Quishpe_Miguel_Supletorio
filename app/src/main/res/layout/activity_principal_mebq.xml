@@ -17,7 +17,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.ExamenSupletorio_Bryan_Cordova.AppBarOverlay">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
 
         <LinearLayout
