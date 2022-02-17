@@ -8,6 +8,7 @@
     tools:context=".ui.main.PlaceholderFragment">
 
     <ListView
+        android:id="@+id/list_view_reportes"
         android:layout_width="409dp"
         android:layout_height="729dp"
         tools:layout_editor_absoluteX="1dp"
