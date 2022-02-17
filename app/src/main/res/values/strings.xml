@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Bonilla_Quishpe_Miguel_Supletorio</string>
+    <string name="titulo_login">Login</string>
+    <string name="text_cedula_login">Cédula: </string>
+    <string name="hint_cedula_login">Ingrese se cédula</string>
+    <string name="text_contraseña_login">Contraseña: </string>
+    <string name="hint_contraseña_login">Ingrese su contraseña</string>
+    <string name="button_ingresar">Ingresar</string>
+    <string name="button_agregar">Agregar Usuario</string>
 </resources>
