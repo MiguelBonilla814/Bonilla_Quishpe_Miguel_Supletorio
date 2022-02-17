@@ -14,17 +14,17 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.bonilla_quishpe_miguel_supletorio.ui.main.SectionsPagerAdapter;
-import com.example.bonilla_quishpe_miguel_supletorio.databinding.ActivityMain2Binding;
+import com.example.bonilla_quishpe_miguel_supletorio.databinding.ActivityMainTabsMebqBinding;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity_Tabs_mebq extends AppCompatActivity {
 
-    private ActivityMain2Binding binding;
+    private ActivityMainTabsMebqBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMain2Binding.inflate(getLayoutInflater());
+        binding = ActivityMainTabsMebqBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
@@ -32,14 +32,5 @@ public class MainActivity2 extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 }

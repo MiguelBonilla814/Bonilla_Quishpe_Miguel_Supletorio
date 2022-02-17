@@ -3,7 +3,6 @@ package com.example.bonilla_quishpe_miguel_supletorio;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -21,13 +20,9 @@ public class LoginActivity_mebq extends AppCompatActivity {
         setContentView(R.layout.activity_login_mebq);
 
         editText_cedula = findViewById(R.id.editText_cedula_login);
-        editText_contraseña = findViewById(R.id.editText_contraseña_login);
+        editText_contraseña = findViewById(R.id.editText_contrasena_login);
     }
 
-    public void abrirRegistro(View view){
-        Intent intent = new Intent(this, RegistroActivity_mebq.class);
-        startActivity(intent);
-    }
 
     public void IniciarSesion(View view){
         UsuarioHelper_mebq bd = new UsuarioHelper_mebq(this, "usuarioBD", null, 1);
@@ -50,7 +45,7 @@ public class LoginActivity_mebq extends AppCompatActivity {
                 p = cursor.getString(3);
             }*/
             if(email.equals("1805326343") && password.equals("Super1234#")){
-                Intent intent = new Intent(this, PrincipalActivity_mebq.class);
+                Intent intent = new Intent(this, MainActivity_Tabs_mebq.class);
                 startActivity(intent);
                 Toast.makeText(this, "Login correcto", Toast.LENGTH_SHORT).show();
             }

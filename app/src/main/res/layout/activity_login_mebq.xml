@@ -39,7 +39,7 @@
         android:text="@string/text_contraseña_login" />
 
     <EditText
-        android:id="@+id/editText_contraseña_login"
+        android:id="@+id/editText_contrasena_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -55,12 +55,5 @@
         android:layout_height="wrap_content"
         android:onClick="IniciarSesion"
         android:text="@string/button_ingresar" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="abrirRegistro"
-        android:text="@string/button_agregar" />
 
 </LinearLayout>
