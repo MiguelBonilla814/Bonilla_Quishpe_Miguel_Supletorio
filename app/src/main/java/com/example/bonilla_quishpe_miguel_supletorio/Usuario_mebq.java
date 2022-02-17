@@ -7,11 +7,11 @@ public class Usuario_mebq {
     private String Contraseña;
     private String Cedula;
 
-    public Usuario(){
+    public Usuario_mebq(){
 
     }
 
-    public Usuario(int id, String nombre, String apellido, String contraseña, String cedula) {
+    public Usuario_mebq(int id, String nombre, String apellido, String contraseña, String cedula) {
         Id = id;
         Nombre = nombre;
         Apellido = apellido;

@@ -20,7 +20,7 @@
         android:text="@string/text_nombre_registrar" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editText_nombre_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:text="@string/text_apellido_registrar" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/editText_apellido_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,7 +48,7 @@
         android:text="@string/text_cedula_registrar" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editText_cedula_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,7 +62,7 @@
         android:text="@string/text_contraseña_registrar" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editText_contraseña_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -76,7 +76,7 @@
         android:text="@string/text_validar_registrar" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editText_contraseña_verificar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -87,11 +87,13 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_ingresar" />
+        android:onClick="Registrar"
+        android:text="@string/button_agregar" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Cancelar"
         android:text="@string/button_cancelar" />
 </LinearLayout>
