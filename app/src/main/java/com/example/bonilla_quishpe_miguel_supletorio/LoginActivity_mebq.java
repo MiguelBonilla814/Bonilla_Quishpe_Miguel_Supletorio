@@ -33,22 +33,22 @@ public class LoginActivity_mebq extends AppCompatActivity {
         UsuarioHelper_mebq bd = new UsuarioHelper_mebq(this, "usuarioBD", null, 1);
         SQLiteDatabase sql = bd.getReadableDatabase();
 
-        String cedula = editText_cedula.getText().toString();
+        String email = editText_cedula.getText().toString();
         String password = editText_contraseña.getText().toString();
 
-        if(cedula.equals("") && password.equals("")){
+        if(email.equals("") && password.equals("")){
             Toast.makeText(this, "No se permiten campos vacíos", Toast.LENGTH_SHORT).show();
         }
         else
         {
-            String consulta = "SELECT * FROM Usuarios WHERE CEDULA = '" + cedula + "' and CONTRASEÑA = '" + password +"'";
+            String consulta = "SELECT * FROM Usuarios WHERE CORREO = '" + email + "' and CONTRASEÑA = '" + password +"'";
             Cursor cursor = sql.rawQuery(consulta, null);
             String c = "", p = "";
             if(cursor.moveToFirst()){
                 c = cursor.getString(4);
                 p = cursor.getString(3);
             }
-            if(cedula.equals(c) && password.equals(p)){
+            if(email.equals(c) && password.equals(p)){
                 Intent intent = new Intent(this, PrincipalActivity_mebq.class);
                 startActivity(intent);
                 Toast.makeText(this, "Login correcto", Toast.LENGTH_SHORT).show();

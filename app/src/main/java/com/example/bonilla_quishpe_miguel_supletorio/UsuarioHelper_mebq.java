@@ -13,19 +13,20 @@ public class UsuarioHelper_mebq extends SQLiteOpenHelper {
             "NOMBRE TEXT," +
             "APELLIDO TEXT," +
             "CONTRASEÑA TEXT," +
-            "CEDULA TEXT)";
+            "CORREO TEXT)";
 
-    public UsuarioHelper_mebq(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+    public UsuarioHelper_mebq(Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-            db.execSQL(createTable_Usuarios);
+    public void onCreate(SQLiteDatabase db){
+        db.execSQL(createTable_Usuarios);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS Usuarios");
+
     }
 }

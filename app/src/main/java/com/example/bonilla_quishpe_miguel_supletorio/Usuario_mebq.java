@@ -5,18 +5,18 @@ public class Usuario_mebq {
     private String Nombre;
     private String Apellido;
     private String Contraseña;
-    private String Cedula;
+    private String Correo;
 
     public Usuario_mebq(){
 
     }
 
-    public Usuario_mebq(int id, String nombre, String apellido, String contraseña, String cedula) {
+    public Usuario_mebq(int id, String nombre, String apellido, String contraseña, String correo) {
         Id = id;
         Nombre = nombre;
         Apellido = apellido;
         Contraseña = contraseña;
-        Cedula = cedula;
+        Correo = correo;
     }
 
     public int getId() {
@@ -49,13 +49,5 @@ public class Usuario_mebq {
 
     public void setContraseña(String contraseña) {
         Contraseña = contraseña;
-    }
-
-    public String getCedula() {
-        return Cedula;
-    }
-
-    public void setCedula(String cedula) {
-        Cedula = cedula;
     }
 }
