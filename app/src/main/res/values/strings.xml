@@ -7,4 +7,16 @@
     <string name="hint_contraseña_login">Ingrese su contraseña</string>
     <string name="button_ingresar">Ingresar</string>
     <string name="button_agregar">Agregar Usuario</string>
+    <string name="titulo_registrar">Registrar Usuario</string>
+    <string name="text_nombre_registrar">Nombre: </string>
+    <string name="hint_nombre_registrar">Ingrese su nombre</string>
+    <string name="text_apellido_registrar">Apellido: </string>
+    <string name="hint_apellido_registrar">Ingreso su apellido</string>
+    <string name="text_cedula_registrar">Cédula: </string>
+    <string name="hint_cedula_registrar">Ingrese su cédula</string>
+    <string name="text_contraseña_registrar">Contraseña: </string>
+    <string name="hint_contraseña_registrar">Ingrese su contraseña</string>
+    <string name="text_validar_registrar">Validar contraseña: </string>
+    <string name="hint_validar_registrar">Verifique su contraseña</string>
+    <string name="button_cancelar">Cancelar</string>
 </resources>
