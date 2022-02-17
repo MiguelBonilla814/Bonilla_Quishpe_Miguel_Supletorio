@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class ListAdapter {
+public class ListAdapter{
     /*public List<Tarea> lista;
     private Context contexto;
     private int resourceLayout;
