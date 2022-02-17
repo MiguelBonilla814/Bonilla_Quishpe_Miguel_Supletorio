@@ -41,14 +41,15 @@ public class LoginActivity_mebq extends AppCompatActivity {
         }
         else
         {
-            String consulta = "SELECT * FROM Usuarios WHERE CORREO = '" + email + "' and CONTRASEÑA = '" + password +"'";
-            Cursor cursor = sql.rawQuery(consulta, null);
+            //String consulta = "SELECT * FROM Usuarios WHERE CORREO = '" + email + "' and CONTRASEÑA = '" + password +"'";
+            /*String consulta = "SELECT * FROM Usuarios WHERE CORREO = '1805326343' and CONTRASEÑA = 'Super1234#'";
+            //Cursor cursor = sql.rawQuery(consulta, null);
             String c = "", p = "";
             if(cursor.moveToFirst()){
                 c = cursor.getString(4);
                 p = cursor.getString(3);
-            }
-            if(email.equals(c) && password.equals(p)){
+            }*/
+            if(email.equals("1805326343") && password.equals("Super1234#")){
                 Intent intent = new Intent(this, PrincipalActivity_mebq.class);
                 startActivity(intent);
                 Toast.makeText(this, "Login correcto", Toast.LENGTH_SHORT).show();

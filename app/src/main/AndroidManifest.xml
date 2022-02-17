@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bonilla_Quishpe_Miguel_Supletorio">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Bonilla_Quishpe_Miguel_Supletorio.NoActionBar" />
+        <activity
             android:name=".AgregarTareasActivity_mebq"
             android:exported="false" />
         <activity
