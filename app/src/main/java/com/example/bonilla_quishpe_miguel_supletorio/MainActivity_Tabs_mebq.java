@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 
 import com.example.bonilla_quishpe_miguel_supletorio.ui.main.SectionsPagerAdapter;
 import com.example.bonilla_quishpe_miguel_supletorio.databinding.ActivityMainTabsMebqBinding;
@@ -19,7 +20,9 @@ import com.example.bonilla_quishpe_miguel_supletorio.databinding.ActivityMainTab
 public class MainActivity_Tabs_mebq extends AppCompatActivity {
 
     private ActivityMainTabsMebqBinding binding;
-
+    private ListView listView_arreglo;
+    private String nombres [] = {"Samuel", "Valentina", "Santiago", "Alejandro", "Valeria", "Benjamin",
+            "Gerardo", "Carlos", "David", "Sofía"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,5 +35,10 @@ public class MainActivity_Tabs_mebq extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
+
+        listView_arreglo = findViewById(R.id.list_view_reportes);
+        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.detalle_reportes, nombres);
+        lv1.setAdapter(adapter);
+
     }
 }
